@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngọc Minh Web Design - Thông tin</title>
+    <title>Ngọc Minh Web Design - Dịch vụ</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,18 +68,51 @@
         #main-content {
             padding: 20px;
         }
-        .section {
+        .service {
             margin-bottom: 20px;
             padding: 15px;
             border: 1px solid #eee;
             background-color: #f9f9f9;
         }
-        .section h2 {
+        .service h2 {
             color: #333;
             margin-top: 0;
         }
+        .contact-form {
+            padding: 20px;
+            border: 1px solid #eee;
+            background-color: #f9f9f9;
+        }
+        .contact-form h2 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: calc(100% - 12px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
         #footer {
-            background-color: #d9534f;
+background-color: #d9534f;
             color: white;
             text-align: center;
             padding: 15px;
@@ -105,19 +138,38 @@
             <button>Đăng ký</button>
         </div>
         <div id="main-content">
-            <div class="section">
-			<h2>Về chúng tôi</h2>
-                <p>Chúng tôi luôn lắng nghe nhu cầu, tạo ra những ý tưởng đột phá mới giúp hơn 2.300 khách hàng thành công.</p>
-                <p>Với sáng tạo, chúng tôi có hơn 10 năm kinh nghiệm xây dựng chiến lược web cho công ty, thương mại điện tử và tập đoàn. Về công nghệ, chúng tôi phát triển trên những trang web vượt trội, giải pháp e-commercial, quảng cáo web, dịch vụ web.</p>
+            <div class="service">
+                <h2>Các dịch vụ</h2>
+                <ul>
+                    <li>
+                        <h3>Thiết kế Website</h3>
+                        <p>Tạo website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $1.000 - $3.000</p>
+                    </li>
+                    <li>
+                        <h3>Bảo trì Website</h3>
+                        <p>Bảo trì website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $250 mỗi tháng</p>
+                    </li>
+                    <li>
+                        <h3>Web Hosting</h3>
+                        <p>Cung cấp hosting chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                        <p>Giá: $25 mỗi tháng</p>
+                    </li>
+                </ul>
             </div>
-            <div class="section">
-                <h2>Dịch vụ chúng tôi</h2>
-                <p>Chúng tôi cam kết cung cấp các dịch vụ tin cậy, chuyên nghiệp, phải chăng.</p>
-            </div>
-        </div>
-        <div id="footer">
-            Ngoc Minh Web Design, Copyright © 2022
-        </div>
-    </div>
-</body>
-</html>
+            <div class="contact-form">
+                <h2>Liên hệ</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="ten">Tên:</label>
+                        <input type="text" id="ten" name="ten" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noidung">Nội dung:</label>
+                        <textarea id="noidung" name="noidung" rows="5" required></textarea>
+                    </div>
