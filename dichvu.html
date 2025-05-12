@@ -68,18 +68,34 @@
         #main-content {
             padding: 20px;
         }
-        .service {
+        .services-section {
             margin-bottom: 20px;
             padding: 15px;
             border: 1px solid #eee;
             background-color: #f9f9f9;
         }
-        .service h2 {
+        .services-section h2 {
             color: #333;
             margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .service-item {
+            margin-bottom: 15px;
+        }
+        .service-item h3 {
+            color: #555;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .service-item p {
+            margin-bottom: 5px;
+        }
+        .price {
+            font-style: italic;
+            color: #777;
         }
         .contact-form {
-            padding: 20px;
+            padding: 15px;
             border: 1px solid #eee;
             background-color: #f9f9f9;
         }
@@ -98,7 +114,7 @@
         }
         .form-group input[type="text"],
         .form-group input[type="email"],
-        .form-group textarea {
+.form-group textarea {
             width: calc(100% - 12px);
             padding: 8px;
             border: 1px solid #ccc;
@@ -112,7 +128,7 @@
             cursor: pointer;
         }
         #footer {
-background-color: #d9534f;
+            background-color: #d9534f;
             color: white;
             text-align: center;
             padding: 15px;
@@ -138,25 +154,23 @@ background-color: #d9534f;
             <button>Đăng ký</button>
         </div>
         <div id="main-content">
-            <div class="service">
+            <div class="services-section">
                 <h2>Các dịch vụ</h2>
-                <ul>
-                    <li>
-                        <h3>Thiết kế Website</h3>
-                        <p>Tạo website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
-                        <p>Giá: $1.000 - $3.000</p>
-                    </li>
-                    <li>
-                        <h3>Bảo trì Website</h3>
-                        <p>Bảo trì website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
-                        <p>Giá: $250 mỗi tháng</p>
-                    </li>
-                    <li>
-                        <h3>Web Hosting</h3>
-                        <p>Cung cấp hosting chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
-                        <p>Giá: $25 mỗi tháng</p>
-                    </li>
-                </ul>
+                <div class="service-item">
+                    <h3>Thiết kế Website</h3>
+                    <p>Tạo website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                    <p class="price">Giá: $1.000 - $3.000</p>
+                </div>
+                <div class="service-item">
+                    <h3>Bảo trì Website</h3>
+                    <p>Bảo trì website chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                    <p class="price">Giá: $250 mỗi tháng</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web Hosting</h3>
+                    <p>Cung cấp hosting chuyên nghiệp, giá cả phải chăng cho cá nhân, công ty, doanh nghiệp hoặc tổ chức.</p>
+                    <p class="price">Giá: $25 mỗi tháng</p>
+                </div>
             </div>
             <div class="contact-form">
                 <h2>Liên hệ</h2>
@@ -171,5 +185,15 @@ background-color: #d9534f;
                     </div>
                     <div class="form-group">
                         <label for="noidung">Nội dung:</label>
-                        <textarea id="noidung" name="noidung" rows="5" required></textarea>
+<textarea id="noidung" name="noidung" rows="5" required></textarea>
                     </div>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            Ngoc Minh Web Design, Copyright © 2022
+        </div>
+    </div>
+</body>
+</html>
