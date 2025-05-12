@@ -16,11 +16,12 @@
             width: 90%;
             margin: 0 auto;
             background-color: #fff;
+            overflow: hidden; /* Để xử lý float */
         }
         #header {
             background-color: #222;
             color: #fff;
-            padding: 20px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -50,25 +51,25 @@
         }
         #banner img {
             display: block;
-            width: 100%; /* Đảm bảo ảnh banner rộng 100% */
-            max-height: 400px; /* Điều chỉnh chiều cao tối đa của banner */
-            object-fit: cover; /* Giữ tỷ lệ và cắt ảnh cho vừa khung */
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
         }
         .banner-text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen mờ cho chữ */
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 5px;
         }
         .banner-text h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
         .banner-text p {
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         .subscription {
             background-color: #f0f0f0;
@@ -77,20 +78,21 @@
             border-top: 1px solid #ddd;
         }
         .subscription h2 {
-            font-size: 20px;
+            font-size: 18px;
             margin-bottom: 10px;
         }
         .subscription input[type="email"] {
-            padding: 10px;
+            padding: 8px;
             margin-right: 10px;
             border: 1px solid #ccc;
         }
         .subscription button {
-            padding: 10px 15px;
+            padding: 8px 12px;
             background-color: #5cb85c;
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 3px;
         }
         #main-content {
             padding: 20px;
@@ -104,16 +106,25 @@
             margin-bottom: 20px;
             border: 1px solid #eee;
             background-color: #fff;
-            text-align: center;
-      }
+            text-align: left; /* Căn trái nội dung */
+        box-sizing: border-box; /* Để padding không làm tăng kích thước */
+        }
         .feature img {
-            max-width: 100px;
+            max-width: 80px; /* Giảm kích thước hình ảnh */
             height: auto;
             margin-bottom: 10px;
+            float: left; /* Đặt hình ảnh bên trái */
+            margin-right: 15px; /* Tạo khoảng cách với chữ */
         }
         .feature h3 {
             color: #333;
             margin-top: 0;
+            font-size: 1.2em;
+        }
+        .feature p {
+            font-size: 0.9em;
+            color: #666;
+            overflow: auto; /* Để chữ bao quanh hình ảnh */
         }
         #footer {
             background-color: #d9534f;
@@ -121,6 +132,7 @@
             text-align: center;
             padding: 15px;
             font-size: 14px;
+            clear: both; /* Xử lý float */
         }
     </style>
 </head>
@@ -137,7 +149,7 @@
             </div>
         </div>
         <div id="banner">
-            <img src="images/banner.jpg" alt="Banner" style="width: 100%;">
+            <img src="images/banner.jpg" alt="Banner">
             <div class="banner-text">
                 <h1>Thiết kế website chuyên nghiệp.</h1>
                 <p>Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
@@ -150,24 +162,25 @@
         </div>
         <div id="main-content">
             <div class="feature">
-                <img src="images/html5.jpg" alt="HTML5">
+                <img src="images/html5.png" alt="HTML5">
                 <h3>Ngôn ngữ HTML5</h3>
                 <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và sẽ là công nghệ cốt lõi của Internet trong tương lai không xa, được đề xuất đầu tiên bởi Opera Software.</p>
             </div>
             <div class="feature">
-                <img src="images/css3.jpg" alt="CSS3">
+                <img src="images/css3.png" alt="CSS3">
                 <h3>Ngôn ngữ CSS3</h3>
                 <p>CSS3 là viết tắt của Cascading Style Sheet level 3, là phiên bản nâng cao của CSS. Được sử dụng để định cấu trúc, tạo kiểu và định dạng các trang web. Một số tính năng mới đã được thêm vào CSS3 và được hỗ trợ bởi tất cả các trình duyệt web hiện đại.</p>
             </div>
             <div class="feature">
-                <img src="images/design.jpg" alt="Thiết kế đồ họa">
+                <img src="images/design.png" alt="Thiết kế đồ họa">
                 <h3>Thiết kế đồ họa</h3>
                 <p>Thiết kế đồ họa là cụm từ để chỉ một chuyên ngành thuộc về mỹ thuật. Trong đó từ "đồ họa" để chỉ những hình vẽ được hiển thị trên một mặt phẳng, và động từ "thiết kế" bao hàm ý nghĩa kiến thiết, sáng tạo.</p>
             </div>
         </div>
         <div id="footer">
-            Ngoc Minh Web Design, Copyright © 2022      
-            </div>
+            Ngoc Minh Web Design, Copyright © 2022
+        </div>
     </div>
 </body>
 </html>
+                
